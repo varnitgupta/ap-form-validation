@@ -1,0 +1,45 @@
+.form-field{
+    display: flex;
+    justify-content: space-between ;
+}
+
+.hide{
+    display: none;
+}
+
+.error-message{
+    color: red; 
+    float: right; 
+    display: none;
+}
+
+.edit-button{
+    background-color: green;
+    color: #fff;
+    width: 50%;
+    height: auto;
+}
+
+.delete-button{
+    background-color: red;
+    color: #fff;
+    width: 50%;
+    height: auto;
+}
+
+/* td {
+    width: 50vw;
+    border: 1px solid #ccc;
+    padding: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* background-color: red; 
+} */
+/* .ellipsis {
+    width: 200px; /* Set a fixed width for the container 
+    white-space: nowrap; /* Prevent text from wrapping to the next line 
+    overflow: hidden; /* Hide overflowing text 
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text 
+  } */
+  

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Html Form</title>
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <form onSubmit="handleSubmit(event)" style="display: inline-block; text-align: left;" name="form1">
+          <!-- Full Name -->
+          <div class="form-field">
+            <label for="fname">Full Name: </label>
+            <input class="form-field-input" type="text" name="FullName" id="fname" placeholder="Full Name">
+            <span id="cfname" class="error-message">*This Field is required</span>
+            <span id="cfname2" class="error-message">*Name should container minimum of 2 charaters</span>
+          </div>
+      
+          <br>
+      
+          <!-- Email -->
+          <div class="form-field">
+            <label for="email">Email: </label>
+            <input class="form-field-input" type="text" name="Email" id="email" placeholder="Email Address">
+            <span id="cemail" class="error-message">*This Field is required</span>
+            <span id="cemail2" class="error-message">*Invalid email address</span>
+          </div>
+      
+          <br>
+      
+          <!-- Mobile -->
+          <div class="form-field">
+            <label for="mobile">Mobile: </label>
+            <input class="form-field-input" type="tel" name="Mobile" id="mobile" placeholder="Mobile Number">
+            <span id="cmobile" class="error-message">*This Field is required</span>
+            <span id="cmobile2" class="error-message">*Invalid mobile number. Please enter a 10-digit phone number.</span>
+          </div>
+      
+          <br>
+      
+          <!-- Password -->
+          <div class="form-field">
+            <label for="password">Password: </label>
+            <input class="form-field-input" type="password" name="Password" id="password" placeholder="Password">
+            <span id="cpassword" class="error-message">*This Field is required</span>
+          </div>
+      
+          <br>
+      
+          <!-- Confirm Password -->
+          <div class="form-field">
+            <label for="cnfPassword">Confirm Password: </label>
+            <input class="form-field-input" type="password" name="CnfPassword" id="cnfPassword" placeholder="Confirm Password">
+            <span id="ccnfpassword" class="error-message">*This Field is required</span>
+            <span id="ccnfpassword2" class="error-message">*Passwords do not match</span>
+          </div>
+      
+          <br>
+      
+          <!-- Country -->
+          <div class="form-field">
+            <label for="country">Country: </label>
+            <select class="form-field-input" name="Country" id="country">
+              <!-- options from javascript -->
+            </select>
+            <span id="ccountry" class="error-message">*This Field is required</span>
+          </div>
+      
+          <br>
+      
+          <!-- State -->
+          <div class="form-field">
+            <label for="state">State: </label>
+            <select class="form-field-input" name="State" id="state">
+              <!-- options from javascript -->
+            </select>
+            <span id="cstate" class="error-message">*This Field is required</span>
+          </div>
+      
+          <br>
+      
+          <!-- City -->
+          <div class="form-field">
+            <label for="city">City: </label>
+            <select class="form-field-input" name="City" id="city">
+              <!-- options from javascript -->
+            </select>
+            <span id="ccity" class="error-message">*This Field is required</span>
+          </div>
+      
+          <br>
+      
+          <!-- Gender -->
+          <div class="form-field">
+            <p>Gender: </p>
+            <div>
+              <label for="male">Male</label>
+              <input class="form-field-input" type="radio" name="Gender" id="male" value="Male">
+              <label for="female">Female</label>
+              <input class="form-field-input" type="radio" name="Gender" id="female" value="Female">
+            </div>
+            <span id="cgender" class="error-message">*This Field is required</span>
+          </div>
+      
+          <br>
+      
+          <!-- Age -->
+          <div class="form-field">
+            <label for="age">Age: </label>
+            <input class="form-field-input" type="number" name="Age" id="age" placeholder="Age">
+            <span id="cage" class="error-message">*This Field is required</span>
+          </div>
+      
+          <br>
+      
+          <!-- Summary -->
+          <div class="form-field">
+            <label for="summary">Summary: </label>
+            <textarea class="form-field-input" name="Summary" id="summary" cols="30" rows="10" placeholder="Profile summary"></textarea>
+            <span id="csummary" class="error-message">*This Field is required</span>
+          </div>
+      
+          <br>
+      
+          <!-- Website -->
+          <div class="form-field">
+            <label for="website">Website: </label>
+            <input class="form-field-input" type="url" name="Website" id="website" placeholder="Website URL">
+            <span id="cwebsite" class="error-message">*This Field is required</span>
+            <span id="cwebsite2" class="error-message">*Invalid URL</span>
+          </div>
+      
+          <br>
+      
+          <!-- Date of Joining -->
+          <div class="form-field">
+            <label for="date">Date of Joining: </label>
+            <input class="form-field-input" type="date" name="DOJ" id="date" placeholder="Available date">
+            <span id="cdoj" class="error-message">*This Field is required</span>
+          </div>
+      
+          <br>
+      
+          <!-- Image Profile -->
+          <div class="form-field">
+            <label for="image-profile">Image Profile: </label>
+            <input class="form-field-input" type="file" name="ImageProfile" id="image-profile" accept="image/*">
+            <span id="cimageprofile" class="error-message">*This Field is required</span>
+          </div>
+      
+          <br>
+      
+          <!-- Resume -->
+          <div class="form-field">
+            <label for="resume">Resume: </label>
+            <input class="form-field-input" type="file" name="Resume" id="resume">
+            <span id="cresume" class="error-message">*This Field is required</span>
+          </div>
+      
+          <input type="submit" name="submit" id="submit">
+          <input type="button" name="save" id="save-button" class="hide" value="Save">
+        </form>
+      </div>
+      
+
+    <hr>
+
+    <!-- Table -->
+    <div id="table-container"></div>
+
+    <script src="index2.js"></script>
+</body>
+</html>
